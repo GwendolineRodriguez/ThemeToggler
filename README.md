@@ -17,6 +17,22 @@ npm i @galpop/themetoggler
 
 ## Usage
 
+This component is largely based on this [wonderful article](https://web.dev/prefers-color-scheme/) that lead to its own [dark mode toggler](https://github.com/GoogleChromeLabs/dark-mode-toggle) webcomponent.
+Therefore, this assumes that you have your dark and light mode styles into different css files.
+
+```html
+<link rel="stylesheet" href="/dark.css" media="(prefers-color-scheme: dark)" />
+<link
+  rel="stylesheet"
+  href="/light.css"
+  media="(prefers-color-scheme: light)"
+/>
+<!-- The main stylesheet -->
+<link rel="stylesheet" href="/style.css" />
+```
+
+Then add the component this way in your html
+
 ```javascript
 <theme-toggler></theme-toggler>
 ```
@@ -29,5 +45,6 @@ npm i @galpop/themetoggler
 ## Resources
 
 This code is based on two main resources :
-<https://www.w3schools.com/howto/howto_css_switch.asp>
-<https://web.dev/prefers-color-scheme/>
+
+- <https://www.w3schools.com/howto/howto_css_switch.asp>
+- <https://web.dev/prefers-color-scheme/>
