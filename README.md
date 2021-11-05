@@ -20,3 +20,8 @@ $ npm i @galpop/themetoggler
 ```javascript
 <theme-toggler></theme-toggler>
 ```
+
+## Features
+
+- focusable with the keyboard
+- reacts dynamically to the user setting defining dark/light mode
