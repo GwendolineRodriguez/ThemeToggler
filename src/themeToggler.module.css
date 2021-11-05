@@ -1,3 +1,8 @@
+:root {
+  --light-focus-color: #003bfc;
+  --dark-focus-color: #fff;
+}
+
 .toggler {
   position: relative;
   display: inline-block;
@@ -43,11 +48,11 @@ input:checked + .slider {
 }
 
 input:focus:checked + .slider {
-  box-shadow: 0 0.5em 2em -0.2em #fff;
+  box-shadow: 0 0.5em 3em var(--dark-focus-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0.5em 2em #003bfc;
+  box-shadow: 0 0.5em 3em var(--light-focus-color);
 }
 
 input:checked + .slider:before {

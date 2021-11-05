@@ -19,9 +19,27 @@ class ThemeToggler extends HTMLElement {
   }
 
   connectedCallback() {
+    this.lightFocusColor = this.getAttribute("lightFocusColor");
+    this.darkFocusColor = this.getAttribute("darkFocusColor");
+    this.setColorAttributes();
     this.render();
     this.init();
   }
+
+  setColorAttributes = () => {
+    if (this.lightFocusColor && this.isHexColor(this.lightFocusColor)) {
+      document.documentElement.style.setProperty(
+        "--light-focus-color",
+        this.lightFocusColor
+      );
+    }
+    if (this.darkFocusColor && this.isHexColor(this.darkFocusColor)) {
+      document.documentElement.style.setProperty(
+        "--dark-focus-color",
+        this.darkFocusColor
+      );
+    }
+  };
 
   init = () => {
     this.themeToggler = document.getElementById("themeToggler");
@@ -37,6 +55,8 @@ class ThemeToggler extends HTMLElement {
       this.updateToggler();
     });
   };
+
+  isHexColor = (hex) => /^#[0-9a-f]{3}(?:[0-9a-f]{3})?$/i.test(hex);
 
   updateToggler = () => {
     if (this.darkModeOn) {
