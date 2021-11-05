@@ -1,6 +1,6 @@
 {
   "name": "@galpop/themetoggler",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An accessible theme toggler adapting dynamically to prefers-color-scheme media query.",
   "license": "MIT",
   "repository": "gwendolinerodriguez/themetoggler",
