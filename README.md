@@ -31,12 +31,12 @@ Therefore, this assumes that you have your dark and light mode styles into diffe
 <link rel="stylesheet" href="/style.css" />
 ```
 
-Then add the component this way in your html
+Then add the component this way in your html, lightFocusColor and darkFocusColor being optional.
 
 ```javascript
 <script type="module" src="../node_modules/@galpop/themetoggler/src/themetoggler.module.js"></script>
 ...
-<theme-toggler></theme-toggler>
+<theme-toggler lightFocusColor="#5859ff" darkFocusColor="#42c996"></theme-toggler>
 ```
 
 ## Features
