@@ -4,13 +4,17 @@
   "description": "An accessible theme toggler adapting dynamically to prefers-color-scheme media query.",
   "license": "MIT",
   "repository": "gwendolinerodriguez/themetoggler",
-  "main": "themeToggler.module.js",
+  "type": "module",
+  "main": "src/themeToggler.module.js",
+  "module": "src/themeToggler.module.js",
   "keywords": [
     "theme",
     "toggler",
     "switch",
     "galpop",
     "accessibility",
-    "prefers-color-scheme"
+    "prefers-color-scheme",
+    "dark",
+    "mode"
   ]
 }
