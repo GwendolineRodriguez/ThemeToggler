@@ -5,9 +5,15 @@
 <img src="img/darkMode.png">
 <img src="img/lightMode.png">
 
-An accessible theme toggler adapting dynamically to prefers-color-scheme media query. It's a vanilla javascript web component, hence can be intalled on an Angular, React or Vue app.
+An accessible theme toggler adapting dynamically to prefers-color-scheme media query, so to the user settings of dark mode enabled or not. It's a vanilla javascript web component, hence can be intalled on an Angular, React or Vue app.
 
 Example here : https://polyhedra-viewer.netlify.app/
+
+## Install
+
+```bash
+$ npm i @galpop/themetoggler
+```
 
 ## Usage
 
