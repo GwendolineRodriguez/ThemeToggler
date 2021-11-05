@@ -11,8 +11,6 @@ Example here : https://polyhedra-viewer.netlify.app/
 
 ## Usage
 
-Simply add
-
 ```javascript
 <theme-toggler></theme-toggler>
 ```
