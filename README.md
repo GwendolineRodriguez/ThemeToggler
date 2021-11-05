@@ -34,6 +34,8 @@ Therefore, this assumes that you have your dark and light mode styles into diffe
 Then add the component this way in your html
 
 ```javascript
+<script type="module" src="../node_modules/@galpop/themetoggler/src/themetoggler.module.js"></script>
+...
 <theme-toggler></theme-toggler>
 ```
 
