@@ -5,6 +5,8 @@
 ![Dark Mode](/img/darkMode.png)
 ![Light Mode](/img/lightMode.png)
 
+![Showcase](/img/toggler-showcase.gif)
+
 An accessible theme toggler adapting dynamically to prefers-color-scheme media query, so to the user settings of dark mode enabled or not. It's a vanilla javascript web component, hence can be intalled on an Angular, React or Vue app.
 
 Example here : <https://polyhedra-viewer.netlify.app/>

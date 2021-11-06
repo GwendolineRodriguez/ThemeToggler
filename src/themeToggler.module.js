@@ -59,10 +59,12 @@ class ThemeToggler extends HTMLElement {
   isHexColor = (hex) => /^#[0-9a-f]{3}(?:[0-9a-f]{3})?$/i.test(hex);
 
   updateToggler = () => {
-    if (this.darkModeOn) {
+    if (this.darkModeOn && !this.themeToggler.checked) {
       this.themeToggler.checked = true;
-    } else {
+      this.themeToggler.dispatchEvent(new Event("input", { bubbles: true }));
+    } else if (this.themeToggler.checked) {
       this.themeToggler.checked = false;
+      this.themeToggler.dispatchEvent(new Event("input", { bubbles: true }));
     }
   };
 
