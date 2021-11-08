@@ -43,7 +43,7 @@ class ThemeToggler extends HTMLElement {
 
   init = () => {
     this.themeToggler = document.getElementById("themeToggler");
-    this.updateToggler();
+    this.initToggler();
     this.themeToggler.addEventListener("click", this.toggleTheme);
     this.darkModeMediaQuery.addEventListener("change", (e) => {
       this.darkModeOn = e.matches;
@@ -57,6 +57,14 @@ class ThemeToggler extends HTMLElement {
   };
 
   isHexColor = (hex) => /^#[0-9a-f]{3}(?:[0-9a-f]{3})?$/i.test(hex);
+
+  initToggler = () => {
+    if (this.darkModeOn && !this.themeToggler.checked) {
+      this.themeToggler.checked = true;
+    } else if (this.themeToggler.checked) {
+      this.themeToggler.checked = false;
+    }
+  };
 
   updateToggler = () => {
     if (this.darkModeOn && !this.themeToggler.checked) {
